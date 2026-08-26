@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PortfÃ³lio de Cleydson Freitas - Back End Developer | DevSecOps & Purple Team">
+  <meta name="theme-color" content="#000000">
+  <title>Cleydson Freitas | Back End Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- ========================================
+       HEADER FIXO - TIPOGRÃFICO
+       ======================================== -->
+  <header class="site-header" role="banner">
+    <!-- Canto Esquerdo: { inicio } -->
+    <a href="#" class="nav-item header-brand" aria-label="Voltar ao topo" title="Voltar ao topo" ondblclick="window.location.reload();">
+      <span class="brace">{</span><span class="nav-text">inicio</span><span class="brace">}</span>
+    </a>
+
+    <!-- NavegaÃ§Ã£o: { SOBRE } { HABILIDADES } { PROJETOS } { CONTATO } -->
+    <nav role="navigation" aria-label="NavegaÃ§Ã£o principal" class="nav-wrapper">
+      <ul class="nav-links">
+        <li><a href="#sobre" class="nav-item"><span class="brace">{</span><span class="nav-text">SOBRE</span><span class="brace">}</span></a></li>
+        <li><a href="#habilidades" class="nav-item"><span class="brace">{</span><span class="nav-text">HABILIDADES</span><span class="brace">}</span></a></li>
+        <li><a href="#projetos" class="nav-item"><span class="brace">{</span><span class="nav-text">PROJETOS</span><span class="brace">}</span></a></li>
+        <li><a href="#contato" class="nav-item"><span class="brace">{</span><span class="nav-text">CONTATO</span><span class="brace">}</span></a></li>
+        <li><a href="#artigos" class="nav-item"><span class="brace">{</span><span class="nav-text">ARTIGOS</span><span class="brace">}</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========================================
+       HERO SECTION
+       ======================================== -->
+  <section class="hero" id="home">
+
+    <!-- BotÃ£o FERRAMENTAS Fixo - Lateral Direita -->
+    <a href="#ferramentas" class="tools-btn nav-item" aria-label="Ir para seÃ§Ã£o de Ferramentas">
+      <span class="brace">{</span><span class="nav-text">FERRAMENTAS</span><span class="brace">}</span>
+    </a>
+
+    <!-- ConteÃºdo Central -->
+    <div class="hero-inner">
+      <!-- Bloco de CÃ³digo Java com Typing Effect -->
+      <div class="code-block" id="code-typing" role="status" aria-live="polite" aria-label="CÃ³digo Java sendo digitado">
+        <div class="code-line">
+          <span class="code-line-number">1</span>
+          <div class="code-content"><span id="line-1"></span></div>
+        </div>
+        <div class="code-line">
+          <span class="code-line-number">2</span>
+          <div class="code-content"><span id="line-2"></span></div>
+        </div>
+        <div class="code-line">
+          <span class="code-line-number">3</span>
+          <div class="code-content"><span id="line-3"></span></div>
+        </div>
+        <div class="code-line">
+          <span class="code-line-number">4</span>
+          <div class="code-content"><span id="line-4"></span></div>
+        </div>
+        <div class="code-line">
+          <span class="code-line-number">5</span>
+          <div class="code-content"><span id="line-5"></span></div>
+        </div>
+        <div class="code-line">
+          <span class="code-line-number">6</span>
+          <div class="code-content"><span id="line-6"></span></div>
+        </div>
+        <div class="code-line">
+          <span class="code-line-number">7</span>
+          <div class="code-content"><span id="line-7"></span></div>
+        </div>
+        <div class="code-line">
+          <span class="code-line-number">8</span>
+          <div class="code-content"><span id="line-8"></span></div>
+        </div>
+      </div>
+
+      <!-- Nome com Typing Effect (Ãšnica vez) -->
+      <h1 class="hero-name font-mono" id="hero-name" aria-label="Cleydson Soares de Freitas"></h1>
+
+      <!-- Cargo -->
+      <p class="hero-title font-mono">BACK-END (Developer) & INFRAESTRUTURA (CyberSecurity)</p>
+
+      <!-- DescriÃ§Ã£o -->
+      <p class="hero-desc">
+        Transformando lÃ³gica em sistemas escalÃ¡veis. Apaixonado por cÃ³digo limpo, arquitetura e infraestrutura de ponta.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-cta">
+        <a href="#projetos" class="btn btn-primary"><span class="brace">{</span> MEUS PROJETOS <span class="brace">}</span></a>
+        <a href="#contato" class="btn btn-secondary"><span class="brace">{</span> CONTATO <span class="brace">}</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       SECTIONS PLACEHOLDER
+       ======================================== -->
+  <main>
+    <section id="sobre" class="section section-alt">
+      <div class="section-inner">
+        <a href="#" class="section-title-link">
+          <h2 class="section-title font-mono"><span class="brace">{</span> SOBRE <span class="brace">}</span></h2>
+        </a>
+
+        <!-- Container dos CartÃµes Sobre -->
+        <div class="about-container">
+          <!-- Card DEV (Estilo IDE) -->
+          <div class="about-card dev-card">
+            <div class="card-header ide-header">
+              <div class="mac-buttons"><span class="red"></span><span class="yellow"></span><span class="green"></span></div>
+              <div class="tab-title">PerfilDev.java</div>
+            </div>
+            <div class="card-body ide-body">
+              <p><span class="ide-kw">public class</span> <span class="ide-class">PerfilDev</span> {</p>
+              <p class="indent"><span class="ide-kw">public</span> <span class="ide-type">String</span> <span class="ide-method">getObjetivo</span>() {</p>
+              <p class="indent-2"><span class="ide-kw">return</span> <span class="ide-string">"Desenvolvedor Back-End com sÃ³lida base em Python, C# e especializaÃ§Ã£o em Java pela EBAC. Focado em construir lÃ³gicas robustas, cÃ³digo limpo e APIs escalÃ¡veis. Busco uma oportunidade de estÃ¡gio para transformar desafios em soluÃ§Ãµes eficientes."</span>;</p>
+              <p class="indent">}</p>
+              <p>}</p>
+            </div>
+          </div>
+
+          <!-- Card INFRA (Estilo Terminal Linux) -->
+          <div class="about-card infra-card">
+            <div class="card-header term-header">
+              <div class="term-title">cleydson@kali-linux: ~</div>
+            </div>
+            <div class="card-body term-body">
+              <p><span class="term-prompt">cleydson@kali-linux:~$</span> cat perfil_infra.txt</p>
+              <p class="term-output">Aluno do 4Âº semestre de SeguranÃ§a da InformaÃ§Ã£o na FATEC Araraquara.</p>
+              <p class="term-output">SÃ³lidos conhecimentos em redes, servidores e sistemas operacionais (Linux).</p>
+              <p class="term-output">Procuro estÃ¡gio em Infraestrutura / CyberSecurity para aplicar meus conhecimentos prÃ¡ticos na proteÃ§Ã£o, monitoramento e otimizaÃ§Ã£o de ambientes corporativos.</p>
+              <p><span class="term-prompt">cleydson@kali-linux:~$</span> <span class="blinking-cursor">_</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section">
+      <div class="section-inner">
+        <a href="#" class="section-title-link">
+          <h2 class="section-title font-mono"><span class="brace">{</span> HABILIDADES <span class="brace">}</span></h2>
+        </a>
+
+        <div class="about-container">
+            <!-- Habilidades DEV (Estilo IDE) -->
+            <div class="about-card dev-card">
+                <div class="card-header ide-header">
+                    <div class="mac-buttons"><span class="red"></span><span class="yellow"></span><span class="green"></span></div>
+                    <div class="tab-title">HabilidadesDev.java</div>
+                </div>
+                <div class="card-body ide-body">
+                    <p><span class="ide-kw">public class</span> <span class="ide-class">HabilidadesDev</span> {</p>
+                    <p class="indent"><span class="ide-type">String</span> focoPrincipal = <span class="ide-string">"Java"</span>;</p>
+                    <p class="indent"><span class="ide-type">List</span><<span class="ide-type">String</span>> outrasLinguagens = Arrays.asList(
+                    <p class="indent-2"><span class="ide-string">"Python"</span>,</p>
+                    <p class="indent-2"><span class="ide-string">"C#"</span>,</p>
+                    <p class="indent-2"><span class="ide-string">"Go"</span>,</p>
+                    <p class="indent-2"><span class="ide-string">"Bash"</span></p>
+                    <p class="indent">);</p>
+                    <p class="indent"><span class="ide-type">String</span> curiosidade = <span class="ide-string">"Monitor de ProgramaÃ§Ã£o I (CNPq)"</span>;</p>
+                    <p class="indent"><span class="ide-kw">// CertificaÃ§Ãµes DevSecOps</span></p>
+                    <p class="indent"><span class="ide-type">String</span>[] devSecOpsCerts = {
+                    <p class="indent-2"><span class="ide-string">"Desenvolvimento Seguro de Software (DevSecOps) - IBSEC"</span>,</p>
+                    <p class="indent-2"><span class="ide-string">"Programa Hackers do Bem - DevSecOps - SENAI/RNP"</span></p>
+                    <p class="indent">};</p>
+                    <p>}</p>
+                </div>
+            </div>
+
+            <!-- Habilidades INFRA (Estilo Terminal Linux) -->
+            <div class="about-card infra-card">
+                <div class="card-header term-header">
+                    <div class="term-title">cleydson@kali-linux: ~/skills</div>
+                </div>
+                <div class="card-body term-body">
+                    <p><span class="term-prompt">cleydson@kali-linux:~$</span> cat skills_infra.txt</p>
+                    <p class="term-output">[+] Cloud Computing & AWS</p>
+                    <p class="term-output">[+] Destaque: AWS Student Builder Leader (SBGL)</p>
+                    <p class="term-output">[+] CERTIFICAÃ‡Ã•ES DE REDES E CLOUD</p>
+                    <p class="term-output">&nbsp;&nbsp;&nbsp;&nbsp;â€¢ ACE Multicloud Network Associate - Aviatrix</p>
+                    <p class="term-output">&nbsp;&nbsp;&nbsp;&nbsp;â€¢ TÃ©cnico em Redes - Cisco Networking Academy</p>
+                    <p class="term-output">&nbsp;&nbsp;&nbsp;&nbsp;â€¢ Redes Linux/Windows - DL TEC</p>
+                    <p><span class="term-prompt">cleydson@kali-linux:~$</span> <span class="blinking-cursor">_</span></p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" style="margin-top: 80px; padding-bottom: 80px; text-align: center;">
+    <a href="#" class="section-title-link" style="text-decoration: none;">
+        <h2 style="color: #FFFFFF; font-family: monospace;"><span class="brace" style="color: #00FF00;">{</span> PROJETOS <span class="brace" style="color: #00FF00;">}</span></h2>
+    </a>
+
+    <div class="projetos-container">
+        
+        <!-- ================= DESENVOLVIMENTO ================= -->
+        <div class="categoria-projetos">
+            <h3><span class="brace">{</span> Desenvolvimento (Backend) <span class="brace">}</span></h3>
+            <div class="grid-cards">
+                <!-- Card Dev 1 -->
+                <div class="card-proj card-dev">
+                    <div class="card-header-dev">
+                        <span class="mac-dot" style="background:#ff5f56;"></span>
+                        <span class="mac-dot" style="background:#ffbd2e;"></span>
+                        <span class="mac-dot" style="background:#27c93f;"></span>
+                    </div>
+                    <div class="card-body-proj">
+                        <div class="card-titulo">Sistema de Login</div>
+                        <div class="card-desc">ImplementaÃ§Ã£o de lÃ³gica de autenticaÃ§Ã£o e validaÃ§Ã£o de acesso (Desafio 30).</div>
+                        <a href="https://github.com/cleydsonsfreitas/Portif-lio/blob/main/Portifolio30/src/SistemadeLogin/exercicio1.java" target="_blank" class="card-link link-dev"><i class="fab fa-github"></i> Ver CÃ³digo</a>
+                    </div>
+                </div>
+                <!-- Card Dev 2 -->
+                <div class="card-proj card-dev">
+                    <div class="card-header-dev">
+                        <span class="mac-dot" style="background:#ff5f56;"></span>
+                        <span class="mac-dot" style="background:#ffbd2e;"></span>
+                        <span class="mac-dot" style="background:#27c93f;"></span>
+                    </div>
+                    <div class="card-body-proj">
+                        <div class="card-titulo">Sistema BancÃ¡rio</div>
+                        <div class="card-desc">Simulador bancÃ¡rio focado na modelagem de classes e transaÃ§Ãµes em Java.</                        <a href="https://github.com/cleydsonsfreitas/Backend/blob/main/SistemaBancario.java" target="_blank" class="card-link link-dev"><i class="fab fa-github"></i> Ver CÃ³digo</a>
+                    </div>
+                </div>
+                <!-- Card Dev 3 -->
+                <div class="card-proj card-dev">
+                    <div class="card-header-dev">
+                        <span class="mac-dot" style="background:#ff5f56;"></span>
+                        <span class="mac-dot" style="background:#ffbd2e;"></span>
+                        <span class="mac-dot" style="background:#27c93f;"></span>
+                    </div>
+                    <div class="card-body-proj">
+                        <div class="card-titulo">Algoritmos e Vetores</div>
+                        <div class="card-desc">Atividade prÃ¡tica focada em manipulaÃ§Ã£o de estruturas de dados e otimizaÃ§Ã£o.</div>
+                        <a href="https://github.com/cleydsonsfreitas/Backend/blob/main/atividade-pratica-ebac3/src/vetores/EBAC6.java" target="_blank" class="card-link link-dev"><i class="fab fa-github"></i> Ver CÃ³digo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= INFRAESTRUTURA ================= -->
+        <div class="categoria-projetos">
+            <h3><span class="brace">{</span> Infraestrutura <span class="brace">}</span></h3>
+            <div class="grid-cards">
+                <!-- Card Infra 1 -->
+                <div class="card-proj card-infra">
+                    <div class="card-header-infra">cleydson@kali:~</div>
+                    <div class="card-body-proj">
+                        <div class="card-titulo color-infra">Projeto PISRC Araraquara</div>
+                        <div class="card-desc">Topologia de infraestrutura, roteamento e redes aplicadas.
+                        <a href="https://github.com/cleydsonsfreitas/pisrc-araraquara" target="_blank" class="card-link link-infra"><i class="fab fa-github"></i> Ver RepositÃ³rio</a>
+                    </div>
+                </div>
+                <!-- Card Infra 2 -->
+                <div class="card-proj card-infra">
+                    <div class="card-header-infra">cleydson@kali:~</div>
+                    <div class="card-body-proj">
+                        <div class="card-titulo color-infra">RelatÃ³rio TÃ©c. SeguranÃ§a</div>
+                        <div class="card-desc">AnÃ¡lise de seguranÃ§a, mapeamento de vulnerabilidades e adequaÃ§Ã£o.</div>
+                        <a href="https://github.com/cleydsonsfreitas/Seguran-a-da-Informa-o/blob/main/RELAT%C3%93RIO%20T%C3%89CNICO.pdf" target="_blank" class="card-link link-infra"><i class="fas fa-file-pdf"></i> Ver PDF</a>
+                    </div>
+                </div>
+                <!-- Card Infra 3 -->
+                <div class="card-proj card-infra">
+                    <div class="card-header-infra">cleydson@kali:~</div>
+                    <div class="card-body-proj">
+                        <div class="card-titulo color-infra">Deploy de Infra em Nuvem</div>
+                        <div class="card-desc">Arquitetura e implementaÃ§Ã£o de ambientes corporativos e servidores.</div>
+                        <a href="https://github.com/cleydsonsfreitas/Seguran-a-da-Informa-o/blob/main/RELAT%C3%93RIO%20T%C3%89CNICO%20DE%20IMPLEMENTA%C3%87%C3%83O%20DE%20INFRAESTRUTURA%20EM%20NUVEM.pdf" target="_blank" class="card-link link-infra"><i class="fas fa-file-pdf"></i> Ver PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= DEVSECOPS ================= -->
+        <div class="categoria-projetos">
+            <h3><span class="brace">{</span> DevSecOps <span class="brace">}</span></h3>
+            <div class="grid-cards">
+                <!-- Card Sec 1 -->
+                <div class="card-proj card-sec">
+                    <div class="card-header-sec">
+                        <span class="mac-dot" style="background:#a371f7;"></span>
+                        <span style="font-size: 12px; color:#00FF00;">[Secured]</span>
+                    </div>
+                    <div class="card-body-proj">
+                        <div class="card-titulo color-sec">Projeto Final DevSecOps</div>
+                        <div class="card-desc">PrÃ¡ticas avanÃ§adas de desenvolvimento seguro de software.</div>
+                        <a href="https://github.com/cleydsonsfreitas/projeto_final_devsecops" target="_blank" class="card-link link-sec"><i class="fab fa-github"></i> Ver RepositÃ³rio</a>
+                    </div>
+                </div>
+                <!-- Card Sec 2 -->
+                <div class="card-proj card-sec">
+                    <div class="card-header-sec">
+                        <span class="mac-dot" style="background:#a371f7;"></span>
+                        <span style="font-size: 12px; color:#00FF00;">[Secured]</span>
+                    </div>
+                    <div class="card-body-proj">
+                        <div class="card-titulo color-sec">Purple Team Pipeline</div>
+                        <div class="card-desc">Pipeline integrando processos de defesa, ataque simulado e automaÃ§Ã£o segura.
+                        <a href="https://github.com/cleydsonsfreitas/devsecops-purple-pipeline" target="_blank" class="card-link link-sec"><i class="fab fa-github"></i> Ver RepositÃ³rio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <section id="ferramentas" style="margin-top: 80px; margin-bottom: 80px; text-align: center;">
+    <!-- TÃ­tulo principal com o padrÃ£o da pÃ¡gina -->
+    <a href="#" class="section-title-link">
+        <h2><span class="brace">{</span> FERRAMENTAS <span class="brace">}</span></h2>
+    </a>
+
+    <div class="about-container">
+        <!-- Card DEV (IDEs e Controle de VersÃ£o) -->
+        <div class="about-card dev-card">
+            <div class="card-header ide-header">
+                <div class="mac-buttons"><span class="red"></span><span class="yellow"></span><span class="green"></span></div>
+                <div class="tab-title">StackDev.java</div>
+            </div>
+            <div class="card-body ide-body">
+                <p class="indent"><span style="color: #6A9955;">// Ambientes de Desenvolvimento (IDEs)</span></p>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-left: 20px; margin-bottom: 30px;">
+                    <img src="https://skillicons.dev/icons?i=vscode,visualstudio,clion,idea,rider,phpstorm,pycharm,webstorm,postman&perline=5" alt="IDEs">
+                </div>
+
+                <p class="indent"><span style="color: #6A9955;">// Controle de VersÃ£o</span></p>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-left: 20px;">
+                    <img src="https://skillicons.dev/icons?i=git,github,gitlab&perline=3" alt="Versionamento">
+                </div>
+            </div>
+        </div>
+
+        <!-- Card INFRA (Cloud, OS, Servidores) -->
+        <div class="about-card infra-card">
+            <div class="card-header term-header">
+                <div class="term-title">cleydson@kali-linux: ~/ferramentas</div>
+            </div>
+            <div class="card-body term-body">
+                <p><span class="term-prompt">cleydson@kali-linux:~/ferramentas$</span> echo "Infraestrutura, Cloud & Servidores"</p>
+                <p class="term-output">Carregando mÃ³dulos...</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-left: 20px; margin-top: 15px; margin-bottom: 20px;">
+                    <img src="https://skillicons.dev/icons?i=aws,azure,gcp,ubuntu,windows,linux,kali,nginx,docker,kubernetes,terraform,powershell&perline=4" alt="Infraestrutura e Servidores">
+                </div>
+                <p><span class="term-prompt">cleydson@kali-linux:~/ferramentas$</span> <span class="blinking-cursor">_</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="contato" class="section section-alt">
+      <div class="section-inner">
+        <a href="#" class="section-title-link">
+          <h2 class="section-title font-mono"><span class="brace">{</span> CONTATO <span class="brace">}</span></h2>
+        </a>
+
+        <div class="about-container" style="justify-content: center; margin-top: 40px;">
+            <!-- Card CONTATO (Estilo Terminal) -->
+            <div class="about-card infra-card" style="max-width: 600px;">
+                <div class="card-header term-header">
+                    <div class="term-title">cleydson@kali-linux: ~/contato</div>
+                </div>
+                <div class="card-body term-body" style="padding: 40px;">
+                    <p><span class="term-prompt">cleydson@kali-linux:~/contato$</span> ./listar_contatos.sh</p>
+                    <p class="term-output" style="margin-bottom: 30px;">[+] Estabelecendo conexÃµes seguras...</p>
+                    
+                    <div class="contact-links-container">
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/5516996323937" target="_blank" class="contact-row">
+                            <div class="contact-icon-box">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <span class="contact-text">https://wa.me/5516996323937</span>
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:cleydsonsoaresdefreitas@gmail.com" class="contact-row">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span class="contact-text">cleydsonsoaresdefreitas@gmail.com</span>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/cleydsonfreitas/" target="_blank" class="contact-row">
+                            <div class="contact-icon-box">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <span class="contact-text">linkedin.com/in/cleydsonfreitas/</span>
+                        </a>
+                    </div>
+                    <p style="margin-top: 30px;"><span class="term-prompt">cleydson@kali-linux:~/contato$</span> <span class="blinking-cursor">_</span></p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="artigos" style="margin-top: 100px; text-align: center; padding-top: 50px;">
+      <a href="#" class="section-title-link">
+        <h2><span class="brace">{</span> ARTIGOS <span class="brace">}</span></h2>
+      </a>
+      <div style="margin-top: 30px; color: #aaa; font-family: 'Courier New', monospace;">
+        <p>EspaÃ§o reservado para futuras publicaÃ§Ãµes e artigos tÃ©cnicos.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-social">
+        <a href="https://github.com/cleydsonsfreitas" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/cleydsonfreitas/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:cleydsonsoaresdefreitas@gmail.com" class="footer-social-link" aria-label="E-mail">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://builder.aws.com/profile?tab=badges" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="AWS Builder Center">
+          <i class="fa-brands fa-aws"></i>
+        </a>
+      </div>
+      <p class="footer-copyright"><span class="brace">{</span> Â© 2026 â€¢ Design by Cleydson Freitas <span class="brace">}</span></p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js" defer></script>
+</body>
+</html>
