@@ -725,3 +725,22 @@ body {
 /* Responsividade */
 @media (max-width: 900px) { .grid-cards-projetos { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 650px) { .grid-cards-projetos { grid-template-columns: 1fr; } }
+
+/* =========================================
+   RESPONSIVIDADE - DISPOSITIVOS MÓVEIS
+   ========================================= */
+@media (max-width: 768px) {
+    h1, .titulo-principal {
+        font-size: 1.8rem !important;
+        word-wrap: break-word;
+    }
+    pre, code, .code-box, .terminal-box {
+        overflow-x: auto !important;
+        white-space: pre-wrap !important;
+        font-size: 0.85rem !important;
+        padding: 15px !important;
+    }
+    section {
+        padding: 40px 15px !important;
+    }
+}
