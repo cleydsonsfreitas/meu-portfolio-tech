@@ -1,4 +1,4 @@
-/* ========================================
+﻿/* ========================================
    CSS RESET & VARIABLES
    ======================================== */
 :root {
@@ -92,7 +92,7 @@ body {
 }
 
 /* ========================================
-   HEADER FIXO - TIPOGRÁFICO
+   HEADER FIXO - TIPOGRÃFICO
    ======================================== */
 .site-header {
   display: flex;
@@ -197,7 +197,7 @@ body {
   animation-delay: 1.5s;
 }
 
-/* Conteúdo Central */
+/* ConteÃºdo Central */
 .hero-inner { max-width: 700px; width: 100%; text-align: center; }
 
 .code-block {
@@ -523,7 +523,7 @@ body {
     align-items: stretch;
 }
 
-/* Classe de ocultação via JS (Mantém o grid íntegro) */
+/* Classe de ocultaÃ§Ã£o via JS (MantÃ©m o grid Ã­ntegro) */
 .hide-card { display: none !important; }
 
 /* Base dos Cards */
@@ -546,7 +546,7 @@ body {
 .card-titulo { font-size: 16px; font-weight: bold; margin-bottom: 15px; }
 .card-desc { color: #aaa; font-size: 13px; line-height: 1.5; margin-bottom: 25px; }
 
-/* ======== ESTILO DOS BOTÕES COM ÍCONE ISOLADO ======== */
+/* ======== ESTILO DOS BOTÃ•ES COM ÃCONE ISOLADO ======== */
 .card-link {
     display: flex !important;
     flex-direction: row !important;
@@ -677,7 +677,7 @@ body {
 }
 
 /* ========================================
-   PROJETOS - FILTROS E CARDS (NOVA VERSÃO)
+   PROJETOS - FILTROS E CARDS (NOVA VERSÃƒO)
    ======================================== */
 
 /* Filtros Projetos */
@@ -693,7 +693,7 @@ body {
 .proj-titulo { font-size: 16px; font-weight: bold; margin-bottom: 15px; }
 .proj-desc { color: #aaa; font-size: 13px; line-height: 1.5; margin-bottom: 25px; }
 
-/* Botões Customizados */
+/* BotÃµes Customizados */
 .proj-link { display: flex; text-decoration: none; border-radius: 4px; font-weight: bold; margin-top: auto; font-size: 14px; border: 1px solid; overflow: hidden; transition: all 0.2s; }
 .proj-icon { display: flex; align-items: center; justify-content: center; padding: 10px 15px; background: rgba(0, 0, 0, 0.3); border-right: 1px solid inherit; }
 .proj-text { display: flex; align-items: center; justify-content: center; flex: 1; padding: 10px; }
@@ -727,20 +727,55 @@ body {
 @media (max-width: 650px) { .grid-cards-projetos { grid-template-columns: 1fr; } }
 
 /* =========================================
-   RESPONSIVIDADE - DISPOSITIVOS M�VEIS
+   HOTFIX RESPONSIVIDADE - DISPOSITIVOS MÓVEIS
    ========================================= */
 @media (max-width: 768px) {
-    h1, .titulo-principal {
-        font-size: 1.8rem !important;
-        word-wrap: break-word;
+    /* 1. Trava o eixo X para impedir rolagem lateral fantasma */
+    html, body {
+        overflow-x: hidden !important;
+        width: 100vw !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
+
+    /* 2. Força títulos gigantes a quebrarem linha e caberem na tela */
+    h1, h2, h3, .titulo-principal {
+        font-size: 1.6rem !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
+        word-break: break-word !important;
+        max-width: 100% !important;
+        line-height: 1.3 !important;
+    }
+
+    /* 3. Trava as caixas de código dentro do container */
     pre, code, .code-box, .terminal-box {
+        max-width: 90vw !important;
         overflow-x: auto !important;
-        white-space: pre-wrap !important;
-        font-size: 0.85rem !important;
+        box-sizing: border-box !important;
+        display: block !important;
+        font-size: 0.8rem !important;
         padding: 15px !important;
+        margin: 10px auto !important;
+        white-space: pre-wrap !important;
+        word-break: break-all !important;
     }
-    section {
-        padding: 40px 15px !important;
+
+    /* 4. Resolve colisão de elementos flutuantes (ex: { FERRAMENTAS }) */
+    section, div, .container {
+        box-sizing: border-box !important;
+        max-width: 100% !important;
+    }
+    
+    [style*="position: absolute"], .decorativo, .flutuante, .titulo-secao {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        transform: none !important;
+        margin: 20px auto !important;
+        display: block !important;
+        text-align: center !important;
     }
 }
+
